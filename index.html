@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Global-and-Local-Variables</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: #ffffff;
+        }
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+        h1 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        button {
+            --button-blue: #0000ff; /* new local variable */
+            background-color: var(--white);
+            color: var(--button-blue);
+            border: 1px solid var(--button-blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS-Global-and-Local-Variables</h1>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+
+    </div>
+</body>
+</html>
