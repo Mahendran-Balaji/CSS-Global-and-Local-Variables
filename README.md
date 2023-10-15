@@ -50,4 +50,3 @@ button {
    ```html
     Chrome: 49.0, IE: 15.0, Firefox: 31.0, Safari: 9.1, Opera: 36.0
    ```
-9) 
